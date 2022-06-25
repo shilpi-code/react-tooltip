@@ -1,0 +1,17 @@
+.wrapper {
+    display: inline-block;
+    position: relative;
+  }
+  .tooltip {
+    position: absolute;
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 1;
+    z-index: 100;
+    white-space: nowrap;
+  }
+  
