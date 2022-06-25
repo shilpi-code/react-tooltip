@@ -3,10 +3,12 @@ import "./Tooltip.css";
 
 const Tooltip = (props) => {
   const [active, setActive] = useState(false);
+  //   function to show the tooltip
   function showtooltip() {
     setActive(true);
   }
 
+  //   function to hide to tooltip
   function hidetooltip() {
     setActive(false);
   }
@@ -19,7 +21,6 @@ const Tooltip = (props) => {
         onMouseEnter={showtooltip}
         onMouseLeave={hidetooltip}
       >
-        {props.children}
         {active && (
           <div className={`tooltip ${props.direction}`}>
             <p id="tooltip-text">Hi, I'm a duck. Quack-Quack!</p>
