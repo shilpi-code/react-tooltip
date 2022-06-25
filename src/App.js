@@ -4,8 +4,9 @@ import Tooltip from './Tooltip'
 const App = () => {
   return (
     <div>
-        <Tooltip direction='top' />
-    </div>
+      <Tooltip direction="right">
+        </Tooltip>
+      </div>
   )
 }
 

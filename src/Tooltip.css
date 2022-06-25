@@ -1,17 +1,44 @@
 .wrapper {
-    display: inline-block;
     position: relative;
   }
-  .tooltip {
+
+.tooltip {
+    background-color: #45b4aa;
     position: absolute;
+    border: 4px solid black;
     border-radius: 4px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 6px;
+    left: 13%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     font-size: 14px;
     font-family: sans-serif;
     line-height: 1;
     z-index: 100;
-    white-space: nowrap;
+    top: 1rem;
+}
+
+  
+.tooltip-emoji {
+    font-size: 6rem;
+    position: absolute;
+    left: 22%;
+    margin-top: 6%;
+  }
+
+.tooltip-heading{
+   margin: 3rem 3rem 0rem;
+   font-family: sans-serif;
+   font-weight: 800;
+}
+
+#tooltip-text::before{
+    content:"";
+    position:absolute;
+    left:80%;
+    top:100%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000;
+
   }
   

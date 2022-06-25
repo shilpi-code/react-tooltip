@@ -12,14 +12,24 @@ const Tooltip = (props) => {
   }
 
   return (
-    <div
-      className="wrapper"
-      onMouseEnter={showtooltip}
-      onMouseLeave={hidetooltip}
-    >
-        {active && (<div className={`tooltip ${props.direction}`}><p>im a tooltip</p></div>)}
-        <h1>tooltip </h1>
-    </div>
+    <>
+      <h2 className="tooltip-heading">Hover over me to see who I am :p</h2>
+      <div
+        className="wrapper"
+        onMouseEnter={showtooltip}
+        onMouseLeave={hidetooltip}
+      >
+        {props.children}
+        {active && (
+          <div className={`tooltip ${props.direction}`}>
+            <p id="tooltip-text">Hi, I'm a duck. Quack-Quack!</p>
+          </div>
+        )}
+        <span className="tooltip-emoji" role="img" aria-label="duck emoji">
+          🦆
+        </span>
+      </div>
+    </>
   );
 };
 
