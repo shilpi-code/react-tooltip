@@ -3,13 +3,17 @@ import "./Tooltip.css";
 
 const Tooltip = (props) => {
   const [active, setActive] = useState(false);
+  let timeout
   //   function to show the tooltip
   function showtooltip() {
+  timeout= setTimeout(()=>{
     setActive(true);
+ },300)
   }
 
   //   function to hide to tooltip
   function hidetooltip() {
+    clearInterval(timeout);
     setActive(false);
   }
 
@@ -19,7 +23,7 @@ const Tooltip = (props) => {
       <div
         className="wrapper"
         onMouseEnter={showtooltip}
-        onMouseLeave={hidetooltip}
+        // onMouseLeave={hidetooltip}
       >
         {active && (
           <div className={`tooltip ${props.direction}`}>

@@ -38,7 +38,41 @@
     top:100%;
     transform: translateX(-50%);
     border: 15px solid;
-    border-color: #000 #0000 #0000 #0000;
-
+    border-color: #000 #0000 #0000 #0000
   }
+
+  @media screen and (max-width: 1063px){
+    .tooltip-emoji {
+        position: absolute;
+        left: 28%;
+        margin-top: 7%;
+      }
+  }
+  @media screen and (max-width: 861px){
+    .tooltip-emoji{
+        margin-top: 10%;
+    }
+  }
+    @media screen and (max-width: 725px){
+        .tooltip-emoji{
+            left: 32%;
+            margin-top: 12%;
+        }
+  }
+  @media screen and (max-width: 581px){
+    .tooltip-emoji{
+        left: 34%;
+        margin-top: 15%;
+    }
+}
+  @media screen and (max-width: 380px) {
+    .tooltip-emoji {
+        left: 25%;
+        margin-top: 20%;
+      }
+      #tooltip-text::before {
+        left:24%;
+      }
+  }
+  
   
