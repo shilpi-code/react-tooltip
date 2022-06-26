@@ -23,7 +23,7 @@ const Tooltip = (props) => {
       <div
         className="wrapper"
         onMouseEnter={showtooltip}
-        // onMouseLeave={hidetooltip}
+        onMouseLeave={hidetooltip}
       >
         {active && (
           <div className={`tooltip ${props.direction}`}>
