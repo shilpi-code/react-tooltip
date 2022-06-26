@@ -62,8 +62,20 @@
   @media screen and (max-width: 581px){
     .tooltip-emoji{
         left: 34%;
-        margin-top: 15%;
+        margin-top: 17%;
     }
+}
+@media screen and (max-width: 462px){
+    .tooltip-emoji{
+        left: 39%;
+        margin-top: 17%;
+    }
+}
+@media screen and (max-width: 426px){
+  .tooltip-emoji{
+      left: 41%;
+      margin-top: 20%;
+  }
 }
   @media screen and (max-width: 380px) {
     .tooltip-emoji {
